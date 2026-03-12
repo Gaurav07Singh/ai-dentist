@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { NavigationHeader } from '@/components/navigation-header'
 import { Footer } from '@/components/footer'
+import { ChatbotWidget } from '@/components/chatbot-widget'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -37,6 +38,7 @@ export default function RootLayout({
         <NavigationHeader />
         {children}
         <Footer />
+        <ChatbotWidget />
         <Analytics />
       </body>
     </html>
