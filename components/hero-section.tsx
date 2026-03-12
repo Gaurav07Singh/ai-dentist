@@ -1,8 +1,6 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+// buttons removed per UI cleanup
 
 interface HeroSectionProps {
   onBookClick?: () => void
@@ -29,27 +27,6 @@ export function HeroSection({ onBookClick }: HeroSectionProps) {
           Experience professional dental care from our team of certified specialists. We combine modern techniques with personalized attention to deliver results you deserve.
         </p>
 
-        {/* CTA */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-16 lg:mb-20">
-          <Link href="/chatbot">
-            <Button
-              size="lg"
-              className="group bg-primary text-primary-foreground hover:bg-primary/90 h-12 sm:h-14 px-4 sm:px-6 lg:px-8 w-full sm:w-auto"
-            >
-              Book Appointment
-              <ArrowRight className="ml-2 w-4 h-4 sm:w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-          </Link>
-          <Link href="/appointments">
-            <Button
-              size="lg"
-              variant="outline"
-              className="h-12 sm:h-14 px-4 sm:px-6 lg:px-8 w-full sm:w-auto"
-            >
-              View Appointments
-            </Button>
-          </Link>
-        </div>
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-12 pt-16 border-t border-border">
